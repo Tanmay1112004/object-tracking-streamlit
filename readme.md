@@ -3,6 +3,10 @@
 A **high-performance, user-friendly web app** for **object detection and tracking** in videos, built using **OpenCV** and **Streamlit**. Designed for speed, clarity, and real-world usability.
 
 ---
+## DEMO IMAGES
+
+![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130009.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130235.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130304.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130331.png)
+---
 
 ## 📌 Overview
 
