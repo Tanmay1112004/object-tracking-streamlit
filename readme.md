@@ -1,81 +1,104 @@
 # 🚗 Object Tracking Streamlit App
 
-A **high-performance, user-friendly web app** for **object detection and tracking** in videos, built using **OpenCV** and **Streamlit**. Designed for speed, clarity, and real-world usability.
+A **high-performance web application** for real-time **object detection and tracking in videos**, built using **OpenCV and Streamlit**.
+
+Designed with a focus on **speed, clarity, and practical usability**, this app provides an efficient computer vision pipeline with customizable controls and clean output.
 
 ---
-## DEMO IMAGES
 
-![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130009.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130235.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130304.png)                                    ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130331.png)
+## 🖼 Demo Preview
+
+<p align="center">
+  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130009.png" width="45%">
+  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130235.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130304.png" width="45%">
+  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130331.png" width="45%">
+</p>
+
 ---
 
 ## 📌 Overview
 
-This app lets you upload a video, tune tracking parameters, and generate a **processed tracking video** with **clean metrics and insights**.
-No clutter. No lag. Just results.
+This application enables users to:
 
-Perfect for:
+* Upload a video file
+* Adjust tracking and performance parameters
+* Process object tracking efficiently
+* Download the final annotated output video
 
-* Computer vision demos
-* Academic projects
-* Rapid experimentation
-* Performance-focused tracking pipelines
+It eliminates unnecessary UI overhead and focuses purely on **efficient video processing and clean results**.
+
+Ideal for:
+
+* Computer Vision demonstrations
+* Academic and final-year projects
+* Rapid prototyping of tracking pipelines
+* Performance benchmarking experiments
 
 ---
 
 ## ✨ Key Features
 
-* 🎥 **Video Upload Support**
-  Supports `.mp4`, `.avi`, and `.mov` formats
+### 🎥 Video Upload
 
-* 🎛️ **Adjustable Tracking Controls**
+* Supports `.mp4`, `.avi`, and `.mov` formats
+* Easy drag-and-drop interface
 
-  * Frame skipping (performance boost)
-  * Resize width (memory + speed control)
-  * Minimum object area filtering
+### 🎛 Adjustable Tracking Controls
 
-* 📊 **Real-Time Progress Bar**
-  Track processing status clearly
+* Frame skipping for performance optimization
+* Resize width for memory and speed control
+* Minimum object area filtering to remove noise
 
-* 📈 **Post-Processing Metrics**
+### 📊 Processing Insights
 
-  * Total frames processed
-  * Objects detected
-  * Processing time stats
+* Real-time progress bar
+* Total frames processed
+* Number of objects detected
+* Processing time statistics
 
-* 📥 **Download Processed Video**
-  Export the final tracked output instantly
+### 📥 Export Capability
 
-* 🧼 **Clean & Minimal UI**
-  Focused on results, not distractions
+* Download the final processed tracking video instantly
+
+### 🧼 Clean & Minimal UI
+
+* No unnecessary visual clutter
+* Designed for speed and usability
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-* **Language**: Python 3.8+
-* **Framework**: Streamlit
-* **Computer Vision**: OpenCV
-* **Deployment Friendly**: Local / GitHub Codespaces
+| Component       | Technology                |
+| --------------- | ------------------------- |
+| Language        | Python 3.8+               |
+| Framework       | Streamlit                 |
+| Computer Vision | OpenCV                    |
+| Deployment      | Local / GitHub Codespaces |
 
 ---
 
 ## ⚡ Run Locally
 
-1. Install dependencies
+### 1️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Start the app
+### 2️⃣ Start the Application
 
 ```bash
 streamlit run app.py
 ```
 
-3. Open in browser
+### 3️⃣ Open in Browser
 
-```text
+```
 http://localhost:8501
 ```
 
@@ -83,53 +106,77 @@ http://localhost:8501
 
 ## 🐳 Run in GitHub Codespaces
 
-1. Install system dependencies
+### Install System Dependencies
 
 ```bash
 sudo apt-get update && sudo apt-get install -y libgl1
 ```
 
-2. Install Python requirements
+### Install Python Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run Streamlit
+### Run the App
 
 ```bash
 streamlit run app.py --server.port 8000 --server.address 0.0.0.0
 ```
 
-4. Open the **forwarded port** in your browser 🚀
+Open the forwarded port in your browser.
 
 ---
 
-## 🚀 Why This Version Is Faster
+## 🚀 Performance Optimization Strategy
 
-This release is **optimized for performance** by design:
+This version is intentionally optimized for speed:
 
-* ❌ No live frame rendering (`st.image`)
-* ✅ Shows **only the final processed video**
-* ⚙️ Frame skipping + resizing = full performance control
-* 📊 Lightweight metrics instead of heavy UI updates
+* ❌ No live frame rendering during processing
+* ✅ Final processed video output only
+* ⚙ Frame skipping and resizing controls
+* 📊 Lightweight metric reporting
 
-Net result: **Less lag. Faster processing. Cleaner output.**
+Result: **Reduced lag, faster execution, cleaner results.**
 
 ---
 
 ## 🎯 Ideal Use Cases
 
-* Object tracking demos
+* Object tracking demonstrations
+* Academic and research experiments
 * CV pipeline prototyping
-* Academic & final-year projects
-* Performance benchmarking
+* Performance comparison studies
 
 ---
 
-## ⭐ Final Thoughts
+## 🏗 Project Architecture
 
-This app cuts the fluff and delivers **pure tracking performance**.
-Fast. Clean. Production-ready.
+```
+object-tracking-streamlit/
+│
+├── app.py
+├── requirements.txt
+├── screenshots/
+└── README.md
+```
 
-If you like it, ⭐ the repo and ship it forward.
+---
+
+## ⭐ Why This Project Stands Out
+
+* Clean architecture
+* Performance-first design
+* Practical computer vision implementation
+* Ready for demos, portfolio, and academic submission
+
+---
+
+## 👨‍💻 Author
+
+**Tanmay Kshirsagar**
+📩 [tanmaykshirsagar001@gmail.com](mailto:tanmaykshirsagar001@gmail.com)
+
+If this project adds value, consider giving it a ⭐ on GitHub.
+
+---
