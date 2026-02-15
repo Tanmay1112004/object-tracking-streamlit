@@ -1,88 +1,119 @@
-# 🚗 Object Tracking Streamlit App
+# 🚗 Real-Time Object Tracking Web App
 
-A **high-performance web application** for real-time **object detection and tracking in videos**, built using **OpenCV and Streamlit**.
+### High-Performance Video Processing with OpenCV + Streamlit
 
-Designed with a focus on **speed, clarity, and practical usability**, this app provides an efficient computer vision pipeline with customizable controls and clean output.
-
----
-
-## 🖼 Demo Preview
-
-<p align="center">
-  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130009.png" width="45%">
-  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130235.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130304.png" width="45%">
-  <img src="https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130331.png" width="45%">
-</p>
+> A production-style computer vision application for efficient object detection and tracking in uploaded videos — optimized for speed, clarity, and usability.
 
 ---
 
-## 📌 Overview
+## 📌 Project Overview
 
-This application enables users to:
+This application enables real-time object tracking through an optimized video processing pipeline built using:
 
-* Upload a video file
-* Adjust tracking and performance parameters
-* Process object tracking efficiently
-* Download the final annotated output video
+* 🎥 **OpenCV** – Computer vision engine
+* 🌐 **Streamlit** – Interactive web interface
+* ⚡ Performance-first frame processing strategy
 
-It eliminates unnecessary UI overhead and focuses purely on **efficient video processing and clean results**.
+Users can upload videos, tune performance parameters, and download annotated tracking outputs — all through a clean and minimal UI.
 
-Ideal for:
-
-* Computer Vision demonstrations
-* Academic and final-year projects
-* Rapid prototyping of tracking pipelines
-* Performance benchmarking experiments
+This project demonstrates practical CV engineering, not just model experimentation.
 
 ---
 
-## ✨ Key Features
+## 🖼 Application Preview
 
-### 🎥 Video Upload
+![Image](https://thiagoalves.ai/images/opencv-streamlit/cover.png)
 
-* Supports `.mp4`, `.avi`, and `.mov` formats
-* Easy drag-and-drop interface
+![Image](https://answers.opencv.org/upfiles/15211527795478438.png)
 
-### 🎛 Adjustable Tracking Controls
+![Image](https://cdn.prod.website-files.com/62c2f68750086204ad7a18f9/67f54769664b254a1abe0cc9_AD_4nXfiH-CAsxrkmZ4idtg9r7vZWVY7DV4S6NDeJEBVdFwlhlKrwVnp9EyeFxgrDQuq7Bgwmf_4Jb0FeNSPXhsyTqaiPkYzqFTd2JdTZTfXE2WMh6aoD1ggsK1TXQLEMQjanoJsDz4oJg.gif)
 
-* Frame skipping for performance optimization
-* Resize width for memory and speed control
-* Minimum object area filtering to remove noise
+![Image](https://images.prismic.io/encord/31aa185c-6a81-4999-a348-6b1754b71e79_3305.webp?auto=compress%2Cformat)
 
-### 📊 Processing Insights
+---
 
-* Real-time progress bar
+## 🚀 Core Capabilities
+
+### 🎥 Smart Video Upload
+
+* Supports `.mp4`, `.avi`, `.mov`
+* Drag-and-drop interface
+* Local processing (no cloud dependency)
+
+---
+
+### 🎛 Performance Control Panel
+
+Users can dynamically adjust:
+
+* **Frame Skipping** → Faster processing
+* **Resize Width** → Memory & speed optimization
+* **Minimum Object Area** → Noise filtering
+
+This allows trade-off control between speed and precision.
+
+---
+
+### 📊 Processing Analytics
+
+During execution:
+
+* Progress tracking bar
 * Total frames processed
-* Number of objects detected
-* Processing time statistics
+* Objects detected count
+* Total execution time
 
-### 📥 Export Capability
+Designed for benchmarking and experimentation.
 
-* Download the final processed tracking video instantly
+---
 
-### 🧼 Clean & Minimal UI
+### 📥 Exportable Results
 
-* No unnecessary visual clutter
-* Designed for speed and usability
+* Annotated video with bounding boxes
+* Instant download after processing
+* Clean overlay rendering
+
+---
+
+## ⚙️ Performance Optimization Strategy
+
+Unlike naive implementations, this app is built for efficiency:
+
+```
+Video Input
+    ↓
+Frame Sampling (Skip Strategy)
+    ↓
+Resize Optimization
+    ↓
+Contour / Object Detection
+    ↓
+Bounding Box Annotation
+    ↓
+Video Writer Output
+```
+
+Key decisions:
+
+✔ No live frame rendering during processing
+✔ Lightweight metric reporting
+✔ Controlled memory footprint
+✔ Faster execution on mid-range hardware
 
 ---
 
 ## 🛠 Tech Stack
 
-| Component       | Technology                |
-| --------------- | ------------------------- |
-| Language        | Python 3.8+               |
-| Framework       | Streamlit                 |
-| Computer Vision | OpenCV                    |
-| Deployment      | Local / GitHub Codespaces |
+| Layer       | Technology         |
+| ----------- | ------------------ |
+| Programming | Python 3.8+        |
+| CV Engine   | OpenCV             |
+| UI          | Streamlit          |
+| Deployment  | Local / Codespaces |
 
 ---
 
-## ⚡ Run Locally
+## 🚀 Run Locally
 
 ### 1️⃣ Install Dependencies
 
@@ -90,7 +121,7 @@ Ideal for:
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Start the Application
+### 2️⃣ Launch App
 
 ```bash
 streamlit run app.py
@@ -106,51 +137,39 @@ http://localhost:8501
 
 ## 🐳 Run in GitHub Codespaces
 
-### Install System Dependencies
+### Install System Dependency
 
 ```bash
 sudo apt-get update && sudo apt-get install -y libgl1
 ```
 
-### Install Python Requirements
+### Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the App
+### Run Server
 
 ```bash
 streamlit run app.py --server.port 8000 --server.address 0.0.0.0
 ```
 
-Open the forwarded port in your browser.
-
----
-
-## 🚀 Performance Optimization Strategy
-
-This version is intentionally optimized for speed:
-
-* ❌ No live frame rendering during processing
-* ✅ Final processed video output only
-* ⚙ Frame skipping and resizing controls
-* 📊 Lightweight metric reporting
-
-Result: **Reduced lag, faster execution, cleaner results.**
+Open forwarded port in browser.
 
 ---
 
 ## 🎯 Ideal Use Cases
 
-* Object tracking demonstrations
-* Academic and research experiments
-* CV pipeline prototyping
-* Performance comparison studies
+* 🎓 Academic CV projects
+* 🧪 Vision pipeline benchmarking
+* 🏭 Industrial tracking prototypes
+* 🚦 Traffic monitoring experiments
+* 📦 Warehouse object monitoring
 
 ---
 
-## 🏗 Project Architecture
+## 🏗 Project Structure
 
 ```
 object-tracking-streamlit/
@@ -163,12 +182,29 @@ object-tracking-streamlit/
 
 ---
 
-## ⭐ Why This Project Stands Out
+## 📈 Why This Project Stands Out
 
-* Clean architecture
-* Performance-first design
-* Practical computer vision implementation
-* Ready for demos, portfolio, and academic submission
+This demonstrates:
+
+✔ Practical computer vision engineering
+✔ Performance optimization awareness
+✔ Real-world deployment thinking
+✔ Clean UI + backend integration
+✔ Efficient video processing pipeline design
+
+This is not just “draw bounding boxes.”
+This shows you understand **pipeline efficiency and system constraints**.
+
+---
+
+## 🔮 Future Enhancements
+
+* YOLO-based object detection integration
+* Deep SORT multi-object tracking
+* Real-time webcam mode
+* GPU acceleration (CUDA OpenCV)
+* REST API version (FastAPI backend)
+* Docker containerization
 
 ---
 
@@ -176,7 +212,14 @@ object-tracking-streamlit/
 
 **Tanmay Kshirsagar**
 📩 [tanmaykshirsagar001@gmail.com](mailto:tanmaykshirsagar001@gmail.com)
+🔗 GitHub: [https://github.com/Tanmay1112004](https://github.com/Tanmay1112004)
 
-If this project adds value, consider giving it a ⭐ on GitHub.
+---
+
+## ⭐ Support
+
+If this project helped or inspired you, consider giving it a ⭐ on GitHub.
+
+It genuinely helps visibility.
 
 ---
