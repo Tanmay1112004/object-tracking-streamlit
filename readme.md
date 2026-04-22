@@ -20,15 +20,6 @@ This project demonstrates practical CV engineering, not just model experimentati
 
 ---
 
-## 🖼 Application Preview
-
-![Image](https://thiagoalves.ai/images/opencv-streamlit/cover.png)
-
-![Image](https://answers.opencv.org/upfiles/15211527795478438.png)
-
-![Image](https://cdn.prod.website-files.com/62c2f68750086204ad7a18f9/67f54769664b254a1abe0cc9_AD_4nXfiH-CAsxrkmZ4idtg9r7vZWVY7DV4S6NDeJEBVdFwlhlKrwVnp9EyeFxgrDQuq7Bgwmf_4Jb0FeNSPXhsyTqaiPkYzqFTd2JdTZTfXE2WMh6aoD1ggsK1TXQLEMQjanoJsDz4oJg.gif)
-
-![Image](https://images.prismic.io/encord/31aa185c-6a81-4999-a348-6b1754b71e79_3305.webp?auto=compress%2Cformat)
 
 ---
 
