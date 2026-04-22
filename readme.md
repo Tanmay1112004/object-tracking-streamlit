@@ -35,6 +35,7 @@ A high-performance **video-based object tracking system** that:
 
 ![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130304.png)
 
+![demo](https://github.com/Tanmay1112004/object-tracking-streamlit/blob/main/screenshots/Screenshot%202025-09-06%20130331.png)
 ---
 
 ## 🚨 Problem Statement
