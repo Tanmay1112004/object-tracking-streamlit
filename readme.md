@@ -27,6 +27,10 @@ A high-performance **video-based object tracking system** that:
 
 ---
 
+## Demo Images
+
+---
+
 ## 🚨 Problem Statement
 
 Most object tracking demos:
